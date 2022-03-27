@@ -13,6 +13,8 @@ public class KWeakestRows {
                 {1,1,0,0,0},
                 {1,1,1,1,1}
         };
+
+
         int k = 3;
         System.out.println(Arrays.toString(kWeakestRow(mat, k)));
         
