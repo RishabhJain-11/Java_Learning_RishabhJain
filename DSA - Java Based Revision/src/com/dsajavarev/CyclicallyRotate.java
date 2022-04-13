@@ -5,6 +5,7 @@ public class CyclicallyRotate {
         int N = 5;
         int[] A = {1, 2, 3, 4, 5};
         rotate(A, N);
+
     }
     public static void rotate(int[] arr, int n)
     {
