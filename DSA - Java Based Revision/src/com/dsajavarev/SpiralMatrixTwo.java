@@ -1,5 +1,5 @@
 package com.dsajavarev;
-
+//https://leetcode.com/problems/spiral-matrix-ii/
 import java.util.Arrays;
 
 public class SpiralMatrixTwo {
@@ -24,21 +24,21 @@ public class SpiralMatrixTwo {
         int num = 1; //change
 
         while (rowStart <= rowEnd && colStart <= colEnd) {
-            for (int i = colStart; i <= colEnd; i ++) {
-                matrix[rowStart][i] = num ++; //change
+            for (int i = colStart; i <= colEnd; i ++) {//yeh start of row to the end of row tak jayega .
+                matrix[rowStart][i] = num ++; //change : yeh row ke liye bana hai
             }
-            rowStart ++;
+            rowStart ++;// agar row ke niche jana hai toh aapko use rowstart++ karna padega kyunki rows ka o-indexing hai
 
-            for (int i = rowStart; i <= rowEnd; i ++) {
-                matrix[i][colEnd] = num ++; //change
+            for (int i = rowStart; i <= rowEnd; i ++) {//ye columns ke andar ke liye usme niche jane ke liye hai
+                matrix[i][colEnd] = num ++; //change: ye downwards direction me move karega.
             }
-            colEnd --;
+            colEnd --;//row ko badalne ke liye.
 
-            for (int i = colEnd; i >= colStart; i --) {
-                if (rowStart <= rowEnd)
-                    matrix[rowEnd][i] = num ++; //change
+            for (int i = colEnd; i >= colStart; i --) {//
+                if (rowStart <= rowEnd)//last row me left traversal karne ke liye bana hai.
+                    matrix[rowEnd][i] = num ++; //change : pura left traverse karega.
             }
-            rowEnd --;
+            rowEnd --;//upar jane ke liye.
 
             for (int i = rowEnd; i >= rowStart; i --) {
                 if (colStart <= colEnd)
