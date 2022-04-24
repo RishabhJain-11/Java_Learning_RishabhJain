@@ -9,6 +9,7 @@ public class MatchSpecificPattern {
         String patter = "foo";
 //        System.out.println(findMatchedWords(dict,patter));
     }
+
     public static ArrayList<String> findMatchedWords(ArrayList<String> dict, String pattern)
     {
         //add code here.
