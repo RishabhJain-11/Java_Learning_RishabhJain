@@ -1,5 +1,5 @@
 package com.dsajavarev;
-
+//https://practice.geeksforgeeks.org/problems/match-specific-pattern/1/?page=1&difficulty[]=0&status[]=unsolved&company[]=Amazon&company[]=Microsoft&company[]=Flipkart&company[]=Adobe&company[]=Google&company[]=Zoho&company[]=Paytm&company[]=Morgan%20Stanley&company[]=Goldman%20Sachs&company[]=Walmart&company[]=D-E-Shaw&company[]=Ola%20Cabs&company[]=VMWare&company[]=Qualcomm&company[]=Intuit%20&company[]=Directi&company[]=Linkedin&company[]=Salesforce&company[]=Codenation&company[]=PayPal&company[]=Nagarro%20&company[]=GE&company[]=Media.net%20&category[]=Strings&sortBy=submissions#
 import java.util.ArrayList;
 import java.util.HashMap;
 
