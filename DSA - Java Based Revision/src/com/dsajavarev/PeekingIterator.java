@@ -3,6 +3,7 @@ package com.dsajavarev;
 public class PeekingIterator {
     public static void main(String[] args) {
 
+
     }
 //    private Integer next = null;
 //    private Iterator<Integer> iter;
