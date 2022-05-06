@@ -3,7 +3,7 @@ package com.dsajavarev;
 public class RemoveAllAdjacentDuplicates {
     public static void main(String[] args) {
         String s = "deeedbbcccbdaa";
-        int k = 2;
+        int k = 3;
         System.out.println(removeDuplicates(s,k));
     }
     public static String removeDuplicates(String s, int k) {
