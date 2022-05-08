@@ -10,6 +10,7 @@ public class WordBreakPartTwo {
 //        List<String> dict = {"cats", "cat", "and", "sand", "dog"};
 //        System.out.println(wordBreak());
     }
+
     static List<String> wordBreak(int n, List<String> dict, String s)
     {
         // code here
