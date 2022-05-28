@@ -11,4 +11,15 @@ public class MissingNumber {
         for (int num : nums) result -= num;
         return result;
     }
+    /**
+     * int MissingNumber(int array[], int n) {
+     *         // Your Code Here
+     *         int xor = 0;
+     *         for(int x : array)
+     *             xor = xor ^ x;
+     *         for(int i = 1;i<=n;i++)
+     *             xor = xor ^ i;
+     *         return xor;
+     *     }
+     */
 }
