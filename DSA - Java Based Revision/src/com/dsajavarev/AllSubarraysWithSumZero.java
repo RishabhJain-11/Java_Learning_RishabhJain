@@ -38,6 +38,8 @@ public class AllSubarraysWithSumZero {
 }
 
 
+
+
 /*
 //        for (int i = 0;i < nums.length;i++){
 //            int sum = 0;
