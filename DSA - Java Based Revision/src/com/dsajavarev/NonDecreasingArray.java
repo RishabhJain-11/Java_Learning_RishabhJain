@@ -5,6 +5,7 @@ public class NonDecreasingArray {
         int[] nums = {4,2,3};
         System.out.println(checkPossibility(nums));
     }
+
     public static boolean checkPossibility(int[] nums) {
         int cnt = 0;//the number of changes
         for(int i = 1; i < nums.length && cnt<=1 ; i++){
