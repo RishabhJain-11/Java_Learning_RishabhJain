@@ -1,13 +1,27 @@
 package com.dsajavarev;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class SubarrayWithZeroSum {
     public static void main(String[] args) {
         int[] arr = {4 ,2 ,-3, 1 ,6};
         int n = 5;
-        System.out.println(findsum(arr,n));
+//        System.out.println(findsum(arr,n));
     }
+    public static void findSum(int[] arr,int n){
+        /*
+        HashSet<Integer> hs = new HashSet<>();
+        int sum = 0;
+        hs.add(0);
+
+        for(int i = 0;i < n;i++){
+            sum += arr[i];
+            if(hs.contains(sum))
+        }*/
+    }
+
+    /*
     static boolean findsum(int[] arr, int n)
     {
         //Your code here
@@ -23,4 +37,6 @@ public class SubarrayWithZeroSum {
         }
         return false;// else return false
     }
+
+     */
 }
