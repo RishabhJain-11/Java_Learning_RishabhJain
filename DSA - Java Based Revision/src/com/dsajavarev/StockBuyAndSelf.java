@@ -11,14 +11,14 @@ public class StockBuyAndSelf {
     }
     public static ArrayList<ArrayList<Integer>> stockBuySell(int[] A, int n) {
         // code here
-        ArrayList<ArrayList<Integer>> al = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> al = new ArrayList<>();
 
         int left = A[0];
         int right = 0;
 
         for(int i = 1;i < n;i++){
             if(A[i] > left){
-                al.add(new ArrayList<Integer>(Arrays.asList(right,i)));
+                al.add(new ArrayList<>(Arrays.asList(right,i)));
                 left = A[i];
                 right = i;
             }
