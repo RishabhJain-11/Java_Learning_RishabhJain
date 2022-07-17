@@ -1,6 +1,7 @@
 package com.dsajavarev;
 
-import java.util.HashMap;
+//import java.util.HashMap;
+import java.util.HashSet;
 
 public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
@@ -8,6 +9,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
         System.out.println(lengthOfLongestSubstring(s));
     }
     public static int lengthOfLongestSubstring(String s){
+        /*
         if(s.length() == 0)
             return 0;
 
@@ -22,5 +24,25 @@ public class LongestSubstringWithoutRepeatingCharacters {
             max = Math.max(max,i - j + 1);
         }
         return max;
+         */
+
+        int start = 0;
+        int end = 0;
+        int max = 0;
+
+        HashSet<Character> hs = new HashSet<>();
+        while (end < s.length()){
+            if(!hs.contains(s.charAt(end))){
+                hs.add(s.charAt(end));
+                end++;
+                max = Math.max(hs.size(),max);
+            }else {
+                hs.remove(s.charAt(start));
+                start++;
+            }
+        }
+        return max;
     }
 }
+
+// Hash set is used so that no repeating elements are there
