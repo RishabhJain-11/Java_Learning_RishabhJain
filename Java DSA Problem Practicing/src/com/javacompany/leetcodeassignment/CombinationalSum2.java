@@ -7,9 +7,6 @@ public class CombinationalSum2 {
     public static void main(String[] args) {
 
     }
-//    static void comb(int a ,int b,int target){
-//
-//    }
     private void findComb(int ind, int[] arr, int target, List<List<Integer>>ans,List<Integer> ds){
         if (ind == arr.length){
             if(target == 0){
