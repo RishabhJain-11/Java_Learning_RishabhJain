@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 class Node {
+    public Node next;
     int key;
     Node left = null,right = null;
 
