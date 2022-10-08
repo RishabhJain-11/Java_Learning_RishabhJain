@@ -30,20 +30,3 @@ public class EvaluateReversePolishNotation {
         return S.pop();
     }
 }
-/*
-class Solution {
-    public int evalRPN(String[] tokens) {
-          for(String s : tokens){
-              else if(s.equals("-")){
-                  b = S.pop();
-                  a = S.pop();
-                  S.add(a - b);
-              }else{
-                  S.add(Integer.parseInt(s));
-              }
-          }
-        return S.pop();
-    }
-}
-
- */
