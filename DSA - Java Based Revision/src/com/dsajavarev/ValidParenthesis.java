@@ -6,32 +6,27 @@ import java.util.Queue;
 public class ValidParenthesis {
     public static void main(String[] args) {
         String s = "()";
-
+        System.out.println(isValid(s));
     }
-    static class MyStack {
-        Queue<Integer> q;
-        public MyStack() {
-            q=new LinkedList<Integer>();
-        }
-
-        public void push(int x) {
-            q.offer(x);
-            for(int i=0;i<q.size()-1;i++){
-                q.offer(q.poll());
+    public static boolean isValid(String s){
+        char[] stack = new char[s.length()];
+        int top = -1;
+        for(int i = 0;i < s.length();i++){
+            char curr = s.charAt(i);
+            if(curr == '(' || curr == '{' || curr == '['){
+                stack[++top] = curr;
+            }else{
+                if(top == -1) return false;
+                if((stack[top] == '(' && curr ==')')
+                        || (stack[top] == '[' && curr ==']')
+                        || (stack[top] == '{' && curr =='}')){
+                    --top;
+                }else{
+                    return false;
+                }
             }
         }
-
-        public int pop() {
-            return q.poll();
-        }
-
-        public int top() {
-            return q.peek();
-        }
-
-        public boolean empty() {
-            return q.isEmpty();
-        }
+        return top == -1;
     }
 }
 
