@@ -8,7 +8,6 @@ public class ImplementQueueUsingStacks {
     }
     private final Stack<Integer> input;
     private final Stack<Integer> output;
-
     public ImplementQueueUsingStacks(){
         input = new Stack<Integer>();
         output = new Stack<Integer>();
