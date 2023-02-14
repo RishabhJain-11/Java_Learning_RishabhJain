@@ -1,11 +1,15 @@
 package com.dsajavarev;
 
+import java.util.Arrays;
+
 public class ShuffleTheArray {
     public static void main(String[] args) {
-
+        int[] nums = {2,5,1,3,4,7};
+        int n = 3;
+        System.out.println(Arrays.toString(shuffle(nums, n)));
     }
 
-    public int[] shuffle(int[] nums, int n){
+    public static int[] shuffle(int[] nums, int n){
         // Store each y(i) with respective x(i)
         for(int i = n;i < 2*n;++i){
             int secondNum = nums[i] << 10;
